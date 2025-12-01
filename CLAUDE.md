@@ -7,13 +7,18 @@
 Nach JEDER abgeschlossenen Aufgabe fuehre automatisch aus (NICHT fragen):
 
 ```bash
+# 1. Commit und Push
 git add .
 git commit -m "type(scope): beschreibung"
 git push origin {branch}
+
+# 2. PR erstellen und mergen
 gh pr create --fill (falls noch kein PR existiert)
-gh pr merge --squash --delete-branch
-git checkout main
-git pull origin main
+gh pr merge --squash
+
+# 3. Lokale Dateien synchronisieren (Worktree-kompatibel)
+git fetch origin main
+git reset --hard origin/main
 ```
 
 ### Commit-Format
@@ -29,6 +34,7 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 - Kein Nachfragen - einfach ausfuehren
 - Bei Merge-Konflikten: User informieren
 - Branch-Praefix: `winda551/`
+- Lokale Sync via `git reset --hard origin/main` (funktioniert in Conductor Worktrees)
 
 ---
 
