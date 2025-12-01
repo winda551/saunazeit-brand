@@ -1,5 +1,37 @@
 # Projekt: SAUNAZEIT – Fasssaunen (Vermietung & Verkauf)
 
+---
+
+## Git-Workflow (AUTOMATISCH nach jeder Aufgabe)
+
+Nach JEDER abgeschlossenen Aufgabe fuehre automatisch aus (NICHT fragen):
+
+```bash
+git add .
+git commit -m "type(scope): beschreibung"
+git push origin {branch}
+gh pr create --fill (falls noch kein PR existiert)
+gh pr merge --squash --delete-branch
+git checkout main
+git pull origin main
+```
+
+### Commit-Format
+```
+type(scope): beschreibung
+
+Generated with Claude Code
+```
+
+Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
+
+### Wichtig
+- Kein Nachfragen - einfach ausfuehren
+- Bei Merge-Konflikten: User informieren
+- Branch-Praefix: `winda551/`
+
+---
+
 ## Unternehmenskontext
 
 - Marke: **SAUNAZEIT** (immer zusammengeschrieben, in Logos meist in Versalien: SAUNAZEIT).
