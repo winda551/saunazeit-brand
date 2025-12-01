@@ -2,6 +2,41 @@
 
 ---
 
+## SCHNELLSTART
+
+**Einfach `/saunazeit` gefolgt von deiner Anfrage verwenden.**
+
+Der Orchestrator waehlt automatisch den richtigen Agenten:
+
+```
+/saunazeit Optimiere das Logo - das S soll deutlicher sein
+/saunazeit Erstelle Favicons
+/saunazeit Aktualisiere die Farbdokumentation
+/saunazeit Pruefe die letzte Logo-Iteration
+```
+
+---
+
+## Aktueller Projektstand
+
+### Erledigt
+- [x] CLAUDE.md mit Geschaeftsmodell
+- [x] Logo in 4 Farbvarianten (Primary, Light, Monochrome, Negative)
+- [x] Adobe Illustrator MCP Integration
+- [x] 6 Sub-Agent Slash-Commands
+- [x] Detaillierte Agent-Prompts in `mcp/prompts/`
+- [x] Automatischer Git-Workflow
+
+### Offen
+- [ ] Logo-Quelldatei (.ai) in `logo/source/` ablegen
+- [ ] Favicon-Set generieren
+- [ ] Brand Guide vervollstaendigen
+
+### Letzte Aenderung
+Siehe `git log --oneline -1`
+
+---
+
 ## Git-Workflow (AUTOMATISCH nach jeder Aufgabe)
 
 Nach JEDER abgeschlossenen Aufgabe fuehre automatisch aus (NICHT fragen):
@@ -111,21 +146,27 @@ Wenn Designaufgaben anstehen:
 
 ## Multi-Agent-Design-Workflow (Logo & Corporate Design)
 
-> WICHTIG: Dieser Workflow soll **automatisch** ausgefuehrt werden, wenn der Benutzer etwas schreibt wie
-> "Starte Logo-Optimierungsworkflow: <Anweisung>"
-> oder
-> "Verbessere das Corporate Design fuer SAUNAZEIT".
+> **WICHTIG:** Nutze einfach `/saunazeit <Anfrage>` - der Orchestrator waehlt automatisch den richtigen Agenten!
 
-### Rollen
+### Verfuegbare Agenten
 
-Definiere intern die folgenden Agenten (alles innerhalb eines Modells, nur Rollenwechsel):
+| Agent | Trigger | Aufgabe |
+|-------|---------|---------|
+| **LogoDesignerAgent** | logo, optimieren, S, Flamme | Logo in Illustrator bearbeiten |
+| **DesignReviewerAgent** | review, pruefen, bewerten | ACCEPT/IMPROVE/REJECT entscheiden |
+| **FaviconAgent** | favicon, icon | Favicon-Set generieren |
+| **ColorAgent** | farbe, palette, kontrast | Farbsystem dokumentieren |
+| **TypographyAgent** | schrift, font, typography | Typografie-System pflegen |
+| **GuidelineAgent** | brand guide, richtlinien | Brand Guide aktualisieren |
 
-- **LogoDesignerAgent**
-- **DesignReviewerAgent**
-- **FaviconAgent**
-- **ColorAgent**
-- **TypographyAgent**
-- **GuidelineAgent**
+### Agent-Prompts (Referenz)
+
+Detaillierte Prompts fuer jeden Agenten liegen in `mcp/prompts/`:
+- `logo_designer_prompt.md`
+- `logo_reviewer_prompt.md`
+- `favicon_agent_prompt.md`
+- `color_agent_prompt.md`
+- `typography_agent_prompt.md`
 
 ### Allgemeine Regeln
 
