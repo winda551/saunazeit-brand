@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "illustrator": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "./mcp/illustrator-mcp",
+        "run",
+        "illustrator"
+      ]
+    }
+  }
+}

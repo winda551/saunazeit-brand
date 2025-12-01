@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- SAUNAZEIT Logo - Negative (Weiss auf Schwarz) -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <defs>
+    <style>
+      .flame { fill: #FFFFFF; }
+      .arc { fill: none; stroke: #FFFFFF; stroke-width: 8; }
+      .line { stroke: #FFFFFF; stroke-width: 4; }
+      .text { fill: #FFFFFF; font-family: 'Montserrat', Arial, sans-serif; font-weight: 600; font-size: 42px; letter-spacing: 8px; }
+      .negative-space { fill: #000000; }
+    </style>
+  </defs>
+
+  <!-- Arc / Halbkreis -->
+  <path class="arc" d="M 60 180 A 140 140 0 0 1 340 180" />
+
+  <!-- Horizontal Line -->
+  <line class="line" x1="60" y1="180" x2="150" y2="180" />
+  <line class="line" x1="250" y1="180" x2="340" y2="180" />
+
+  <!-- Flame with negative S -->
+  <path class="flame" d="
+    M 200 60
+    C 220 80, 235 100, 235 125
+    C 235 145, 220 160, 200 160
+    C 215 145, 220 130, 215 115
+    C 210 130, 195 140, 185 135
+    C 175 130, 170 115, 175 100
+    C 165 115, 160 135, 165 150
+    C 145 140, 140 110, 155 85
+    C 165 65, 185 55, 200 60
+    Z
+  " />
+
+  <!-- Inner S-shape (negative space) -->
+  <path class="negative-space" d="
+    M 195 90
+    C 200 95, 208 100, 210 110
+    C 205 105, 195 105, 190 110
+    C 195 115, 205 120, 200 130
+    C 195 125, 185 120, 190 110
+    C 192 100, 190 95, 195 90
+    Z
+  " />
+
+  <!-- Text SAUNAZEIT -->
+  <text class="text" x="200" y="250" text-anchor="middle">SAUNAZEIT</text>
+</svg>
