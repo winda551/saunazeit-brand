@@ -4,15 +4,15 @@
 
 ## SCHNELLSTART
 
-**Einfach `/saunazeit` gefolgt von deiner Anfrage verwenden.**
+**Einfach `/saunazeit-brand` gefolgt von deiner Anfrage verwenden.**
 
 Der Orchestrator waehlt automatisch den richtigen Agenten:
 
 ```
-/saunazeit Optimiere das Logo - das S soll deutlicher sein
-/saunazeit Erstelle Favicons
-/saunazeit Aktualisiere die Farbdokumentation
-/saunazeit Pruefe die letzte Logo-Iteration
+/saunazeit-brand Optimiere das Logo - das S soll deutlicher sein
+/saunazeit-brand Erstelle Favicons
+/saunazeit-brand Aktualisiere die Farbdokumentation
+/saunazeit-brand Pruefe die letzte Logo-Iteration
 ```
 
 ---
@@ -146,7 +146,7 @@ Wenn Designaufgaben anstehen:
 
 ## Multi-Agent-Design-Workflow (Logo & Corporate Design)
 
-> **WICHTIG:** Nutze einfach `/saunazeit <Anfrage>` - der Orchestrator waehlt automatisch den richtigen Agenten!
+> **WICHTIG:** Nutze einfach `/saunazeit-brand <Anfrage>` - der Orchestrator waehlt automatisch den richtigen Agenten!
 
 ### Verfuegbare Agenten
 
