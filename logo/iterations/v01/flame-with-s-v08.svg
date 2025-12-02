@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 130" width="80" height="130">
+  <!--
+    SAUNAZEIT Flamme v08 - Organisches S durch Flammenformen
+    Zwei separate Flammenformen die zusammen ein S bilden.
+    Das wirkt natuerlicher als ein Buchstaben-Cutout.
+    Orange: #F47A20
+  -->
+
+  <!-- Obere Flammenform - schwingt nach rechts -->
+  <path fill="#F47A20" d="
+    M 40 0
+    C 42 5, 48 15, 55 28
+    C 62 42, 65 55, 60 65
+    C 55 75, 45 78, 40 75
+    C 35 72, 32 65, 35 55
+    C 38 45, 45 40, 48 30
+    C 50 22, 48 12, 40 0
+    Z
+  "/>
+
+  <!-- Untere Flammenform - schwingt nach links -->
+  <path fill="#F47A20" d="
+    M 40 55
+    C 45 58, 55 65, 58 78
+    C 62 92, 55 108, 45 118
+    C 42 122, 40 125, 40 130
+    C 40 125, 38 122, 35 118
+    C 25 108, 18 92, 22 78
+    C 25 65, 35 58, 40 55
+    Z
+  "/>
+
+  <!-- Verbindender Mittelteil -->
+  <path fill="#F47A20" d="
+    M 35 55
+    C 32 60, 28 68, 30 75
+    C 32 82, 40 85, 48 80
+    C 52 77, 55 72, 52 65
+    C 50 60, 45 56, 40 55
+    C 38 55, 36 55, 35 55
+    Z
+  "/>
+</svg>

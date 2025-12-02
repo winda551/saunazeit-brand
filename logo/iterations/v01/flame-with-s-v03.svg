@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 120" width="80" height="120">
+  <!--
+    SAUNAZEIT Flamme v03 - S als innerer Cutout
+    Die aeussere Flammenform enthaelt einen S-foermigen
+    Negativraum (Ausschnitt).
+    Orange: #F47A20
+  -->
+
+  <!--
+    Flamme mit S-Cutout
+    fill-rule="evenodd" erzeugt den Negativraum
+  -->
+  <path fill="#F47A20" fill-rule="evenodd" d="
+    M 40 0
+    C 45 10, 58 22, 65 40
+    C 72 58, 70 78, 62 95
+    C 56 108, 48 115, 40 120
+    C 32 115, 24 108, 18 95
+    C 10 78, 8 58, 15 40
+    C 22 22, 35 10, 40 0
+    Z
+
+    M 40 20
+    C 32 28, 28 35, 28 45
+    C 28 52, 32 58, 40 58
+    C 48 58, 52 52, 52 45
+    C 52 42, 50 38, 46 35
+    C 50 32, 55 28, 55 22
+    C 55 18, 52 15, 48 15
+    C 44 15, 42 18, 40 20
+    Z
+
+    M 40 65
+    C 48 68, 52 75, 52 82
+    C 52 90, 48 95, 40 95
+    C 32 95, 28 90, 28 82
+    C 28 78, 30 74, 34 72
+    C 30 70, 25 75, 25 82
+    C 25 92, 32 100, 40 100
+    C 48 100, 55 92, 55 82
+    C 55 72, 48 65, 40 65
+    Z
+  "/>
+</svg>

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 140" width="100" height="140">
+  <!--
+    SAUNAZEIT Flamme mit S-Negativraum
+    Die Flammenform zeigt ein negatives "S" im Zwischenraum.
+    Orange: #F47A20
+  -->
+
+  <defs>
+    <style>
+      .flame-fill { fill: #F47A20; }
+    </style>
+  </defs>
+
+  <!--
+    Flamme bestehend aus zwei Hauptformen:
+    - Linke Flammenform (schwingt nach rechts oben)
+    - Rechte Flammenform (schwingt nach links unten)
+    Zusammen bilden sie ein negatives S im Zwischenraum
+  -->
+
+  <!-- Aeussere Flammenkontur als ein Pfad mit S-Negativraum -->
+  <path class="flame-fill" d="
+    M 50 0
+    C 52 15, 70 25, 75 45
+    C 80 60, 78 75, 70 90
+    C 65 100, 60 108, 55 115
+    Q 52 120, 50 125
+    Q 53 132, 50 140
+    Q 47 132, 50 125
+    Q 48 120, 45 115
+    C 40 108, 35 100, 30 90
+    C 22 75, 20 60, 25 45
+    C 30 25, 48 15, 50 0
+    Z
+
+    M 50 25
+    C 55 35, 62 40, 60 55
+    C 58 65, 52 72, 50 80
+    C 48 72, 42 65, 40 55
+    C 38 40, 45 35, 50 25
+    Z
+  " fill-rule="evenodd"/>
+
+  <!--
+    Alternative: Flame mit deutlicherem S-Schnitt
+    Der innere Cutout formt das S
+  -->
+</svg>
