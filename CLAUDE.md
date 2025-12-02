@@ -51,9 +51,16 @@ git push origin {branch}
 gh pr create --fill (falls noch kein PR existiert)
 gh pr merge --squash
 
-# 3. Lokale Dateien synchronisieren (Worktree-kompatibel)
+# 3. Conductor Worktree synchronisieren
 git fetch origin main
 git reset --hard origin/main
+
+# 4. Haupt-Repository synchronisieren (WICHTIG!)
+# Das Haupt-Repo liegt AUSSERHALB des Worktrees und muss separat aktualisiert werden
+MAIN_REPO=$(git rev-parse --git-dir | sed 's|/.conductor/.*|/.conductor/..|' | xargs realpath 2>/dev/null || echo "")
+if [ -d "$MAIN_REPO/.git" ]; then
+  (cd "$MAIN_REPO" && git pull origin main)
+fi
 ```
 
 ### Commit-Format
@@ -69,7 +76,8 @@ Types: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
 - Kein Nachfragen - einfach ausfuehren
 - Bei Merge-Konflikten: User informieren
 - Branch-Praefix: `winda551/`
-- Lokale Sync via `git reset --hard origin/main` (funktioniert in Conductor Worktrees)
+- Worktree-Sync via `git reset --hard origin/main`
+- **Haupt-Repository IMMER separat synchronisieren** (liegt ausserhalb des Worktrees unter `../../`)
 
 ---
 
